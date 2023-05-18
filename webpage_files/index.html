@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>This is DaMu's collection of Video clips! :)</title>
+		<meta name="description" content="Videos, mostly...">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="increased.css">
+		<link rel="icon" type="image/png" href="clip.png"/>
+		<script src="./callClip.js" defer>
+			let FF_FOUC_FIX;
+		</script>
+		<script src="./standard.js" defer></script>
+		<body>
+			<header>
+				<h1>Clip Collection & Player</h1>
+			</header>
+			<main>			
+				<h2>Video Player</h2>
+				<h3 id="videoname"></h3>
+					<section class="media" id="mainPlayer">
+						<video controls loop id="mainPlayerVideo" preload="metadata" poster="thumbnail.png" tabindex="0">
+							<source src="./sample.webm" type="video/webm"/>
+							<track src="" kind="captions" default/>
+							<object type="application/x-shockwave-flash" data="player.swf"> </object>
+										Video should play here...
+						</video>
+					</section>
+				<h2>Grid Collection of Clips</h2>
+				<div class="container">
+					<button id="FloatTop" tabindex="0"><a href="#">Top</a></button>
+					<p id="ChangeNotification">Video has changed!</p>
+					<div class="grid-even-columns" tabindex="0">
+	
+				<div class="flow"> 
+					<button href="#" onclick="showImage('DinosaurOfficePromo')" tabindex=0> <img src="../thumbnails/DinosaurOfficePromo.png" alt="DinosaurOfficePromo" id="DinosaurOfficePromo"></button>
+				</div>
+				<div class="flow"> 
+					<button href="#" onclick="showImage('AustinPowersRoller')" tabindex=0> <img src="../thumbnails/AustinPowersRoller.png" alt="AustinPowersRoller" id="AustinPowersRoller"></button>
+				</div>
+				<div class="flow"> 
+					<button href="#" onclick="showImage('BlueBowser')" tabindex=0> <img src="../thumbnails/BlueBowser.png" alt="BlueBowser" id="BlueBowser"></button>
+				</div>
+				</div>
+			</div>
+    </main>
+		<footer>
+			<button id="FootButton">
+				<a href="#">Back To Top</a>
+			</button>
+		</footer>
+  </body>
+</html>
