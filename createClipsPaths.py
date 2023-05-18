@@ -11,9 +11,9 @@ thumbnails = "thumbnails"
 pre_folder = "docs\\"
 full_clips= os.path.join(dir_path, clips)
 full_thumbnails=  os.path.join(dir_path, thumbnails)
-index_start= os.path.join(dir_path, pre_folder +".index_start")
+index_start= os.path.join(dir_path, pre_folder +"index_start")
 index_file = "index.html"
-index_end= os.path.join(dir_path, pre_folder +".index_end")
+index_end= os.path.join(dir_path, pre_folder +"index_end")
 js_file = os.path.join(dir_path, pre_folder + "callClip.js")
 
 error_txt= os.path.join(dir_path,".thumbError.txt")
@@ -55,10 +55,6 @@ def insertClipThumbnails():
     return(clipList)
 
 #Generate a JS readable array of the local file paths pointing to each elegible video and thumbnail, which share the same name but have a different file extension.
-#    let sidebar = document.getElementById("stage-sidebar");
-#    let chosen_name = document.getElementById(imgName);
-#    chosen_name.textContent = imgthumb;
-#   chosen_name.textContent = inim;
 
 def writeJS_arrayofclips():
 #find each -.mp4 file in the directory and append to js list
@@ -89,8 +85,7 @@ def writeHTML_1():
         goingToHTML = goingToHTML + i
     return(goingToHTML)
 
-#this will write list of img links to HTML
-#uncomment to allow a quick run through Python
+#this will write each of img links as containers to HTML and an array of the ids to JS
 if __name__ == "__main__":
     open(js_file, "w").write(writeJSfunc())
     open(index_file, "w").write(writeHTML_1())
