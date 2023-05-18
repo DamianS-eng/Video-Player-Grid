@@ -8,11 +8,11 @@ import random
 dir_path = os.path.dirname(os.path.abspath(__file__))
 clips = "clip_mp4"
 thumbnails = "thumbnails"
-pre_folder = "webpage_files\\"
+pre_folder = "docs\\"
 full_clips= os.path.join(dir_path, clips)
 full_thumbnails=  os.path.join(dir_path, thumbnails)
 index_start= os.path.join(dir_path, pre_folder +".index_start")
-index_file = os.path.join(dir_path, pre_folder +"index.html")
+index_file = "index.html"
 index_end= os.path.join(dir_path, pre_folder +".index_end")
 js_file = os.path.join(dir_path, pre_folder + "callClip.js")
 

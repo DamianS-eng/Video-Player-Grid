@@ -21,16 +21,16 @@ function showImage(inim){
         }
     if(inim == 'random') {
         let a = Math.floor(Math.random() * clipsList.length);
-        let img = backFolder + video_source + clipsList[a] +".mp4";
-        let imgthumb = backFolder + thumb_source + clipsList[a] + ".png";
+        let img = video_source + clipsList[a] +".mp4";
+        let imgthumb = thumb_source + clipsList[a] + ".png";
         console.log("Random source is "+img);
         chosen_one.src = img;
         chosen_one.poster = imgthumb;
         insertTitle();
         return false;
     }
-    chosen_one.src = backFolder + video_source + inim + ".mp4";
-    chosen_one.poster = backFolder + thumb_source + inim + ".png";
+    chosen_one.src = video_source + inim + ".mp4";
+    chosen_one.poster = thumb_source + inim + ".png";
     insertTitle();
     showChange();
 }
