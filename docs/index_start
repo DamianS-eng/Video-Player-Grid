@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>This is DaMu's collection of Video clips! :)</title>
 		<meta name="description" content="Videos, mostly...">
-		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="increased.css">
-		<link rel="icon" type="image/png" href="clip.png"/>
-		<script src="./callClip.js" defer>
+		<link rel="stylesheet" href="docs/index.css">
+		<link rel="stylesheet" href="docs/increased.css">
+		<link rel="icon" type="image/ico" href="docs/clip.ico"/>
+		<script src="docs/callClip.js" defer>
 			let FF_FOUC_FIX;
 		</script>
-		<script src="./standard.js" defer></script>
+		<script src="docs/standard.js" defer></script>
 		<body>
 			<header>
 				<h1>Clip Collection & Player</h1>
