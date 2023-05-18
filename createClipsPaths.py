@@ -50,7 +50,7 @@ def insertClipThumbnails():
 """ + tabs + """\t<button href="#" onclick="showImage('"""
     for clip in shuffledList(0):
         if clip.endswith(".mp4"):
-            clipList = clipList + template_div + clip[0:-4] + "')\" tabindex=0> <img src=\"../" + thumbnails + "/" + clip[0:-4] + ".png\" alt=\"" + clip[0:-4] + "\" id=\"" + clip[0:-4]
+            clipList = clipList + template_div + clip[0:-4] + "')\" tabindex=0> <img src=\"" + thumbnails + "/" + clip[0:-4] + ".png\" alt=\"" + clip[0:-4] + "\" id=\"" + clip[0:-4]
             clipList = clipList + """\"></button>\n"""+tabs+"""</div>\n"""
     return(clipList)
 
